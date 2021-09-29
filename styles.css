@@ -1,8 +1,4 @@
-//*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
-:root {
-  --primary-dark: #0080FF;
-  --primary-green: #6EE7B7;
-}
+
 
 body {
     margin-top:10%;
@@ -49,5 +45,6 @@ input {
     padding-top:110px;
     
 }
+
 
 
