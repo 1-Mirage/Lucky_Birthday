@@ -8,7 +8,9 @@ const outputbox = document.getElementById("output-box");
 
 function compareValues(sum,luckynumber)
 {
-  if(sum%luckynumber===0)
+  if(Number(luckynumber)===0)
+    outputbox.innerText="Lucky Number cannot be zero";
+    else if(sum%luckynumber===0)
   {
     outputbox.innerText="The birthday is lucky";
   }
@@ -22,10 +24,15 @@ function checklucky()
 {
   const dob =DOB.value;
   const sum = calculateSum(dob);
-  if(sum&&dob)
+  const lucval=luckynumber.value;
+  
+  if(lucval!=""&&dob)
   compareValues(sum,luckynumber.value)
   else 
-  outputbox.innerText="Please enter both the fields";
+  {
+    outputbox.innerText="Please enter both the fields";
+  }
+  
 }
 
 function calculateSum(dob) 
